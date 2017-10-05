@@ -30,4 +30,8 @@ node_modules
 npm-debug.log
 
 # environment
-.env
+/.env
+*.env
+jest
+codeship.aes
+deployment.env
