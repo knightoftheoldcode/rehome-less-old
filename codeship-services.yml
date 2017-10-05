@@ -1,0 +1,17 @@
+rehome:
+  build: .
+  # links:
+  #   - postgres
+  # environment:
+  #   DATABASE_URL: "postgres://rehome@postgres/rehome"
+  cached: true
+# postgres:
+#   image: postgres:9.6.2-alpine
+#   environment:
+#     POSTGRES_USER: rehome
+#     POSTGRES_DB: rehome
+codeship_heroku_deployment:
+  image: codeship/heroku-deployment
+  encrypted_env_file: deployment.env.encrypted
+  volumes:
+    - ./:/deploy
