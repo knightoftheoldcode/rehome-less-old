@@ -12,8 +12,8 @@
 #   command: codeship_heroku deploy /deploy kotoc-rehome
 - name: push
   tag: master
-  service: dockercfg_test
+  service: rehome
   type: push
   image_name: registry.heroku.com/kotoc-rehome/web
   registry: registry.heroku.com
-  dockercfg_service: dockercfg_generator
+  dockercfg_service: rehome
