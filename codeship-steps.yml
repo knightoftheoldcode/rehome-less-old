@@ -16,4 +16,4 @@
   type: push
   image_name: registry.heroku.com/kotoc-rehome/web
   registry: registry.heroku.com
-  dockercfg_service: rehome
+  heroku_dockercfg: rehome
