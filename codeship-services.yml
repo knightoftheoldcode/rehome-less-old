@@ -14,3 +14,7 @@ rehome:
 #   environment:
 #     POSTGRES_USER: rehome
 #     POSTGRES_DB: rehome
+heroku_dockercfg:
+  image: codeship/heroku-dockercfg-generator
+  add_docker: true
+  encrypted_env_file: deployment.env.encrypted

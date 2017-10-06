@@ -6,14 +6,10 @@
   - name: tests
     service: rehome
     command: npm test
-# - name: deploy
-#   tag: master
-#   service: codeship_heroku_deployment
-#   command: codeship_heroku deploy /deploy kotoc-rehome
 - name: push
   tag: master
   service: rehome
   type: push
   image_name: registry.heroku.com/kotoc-rehome/web
   registry: registry.heroku.com
-  dockercfg_service: rehome
+  dockercfg_service: heroku_dockercfg
